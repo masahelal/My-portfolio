@@ -30,16 +30,16 @@ const Certificates = React.forwardRef((props, ref) => {
   return (
     <section
       ref={ref}
-      className="min-h-screen bg-white py-20 px-8 flex flex-col items-center"
+      className="min-h-screen bg-white py-20 px-4 sm:px-8 flex flex-col items-center"
     >
       <RevealItem delay={0}>
-        <h2 className="text-4xl font-bold text-center mb-12 text-blue-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-900">
           My <span className="text-sky-400">Certificates</span>
         </h2>
       </RevealItem>
 
       <RevealItem delay={150}>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full">
           {certificates.map((cert) => (
             <div
               key={cert.id}
@@ -48,10 +48,10 @@ const Certificates = React.forwardRef((props, ref) => {
               <img
                 src={cert.image}
                 alt={cert.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-48 sm:h-56 md:h-64 object-cover"
               />
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-blue-900 mb-1">
+                <h3 className="text-lg md:text-xl font-semibold text-blue-900 mb-1">
                   {cert.title}
                 </h3>
                 <p className="text-gray-600 mb-3">{cert.platform}</p>
