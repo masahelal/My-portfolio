@@ -5,14 +5,13 @@ const Header = ({ scrollToSection, refs }) => {
 
   return (
     <header className="bg-blue-900 text-white flex justify-between items-center px-4 sm:px-8 py-3 sm:py-4 rounded-full mx-4 sm:mx-6 my-4 shadow-lg sticky top-4 z-50 backdrop-blur">
-      د
       <div className="flex items-center gap-2">
         <div className="bg-sky-300 w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-blue-900">
           M
         </div>
         <span className="font-semibold text-base sm:text-lg">Masa.</span>
       </div>
-      د
+
       <nav className="hidden md:flex gap-8 font-medium">
         <button
           onClick={() => scrollToSection(refs.heroRef)}
