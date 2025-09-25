@@ -12,7 +12,7 @@ const ContactMe = () => {
     <section className="min-h-screen flex items-center justify-center bg-white px-6 py-16">
       <div className="max-w-3xl w-full">
         <RevealItem>
-          <p className="text-sky-300 font-semibold mb-2">— Contact Us</p>
+          <p className="text-sky-300 font-semibold mb-2">— Contact Me</p>
         </RevealItem>
 
         <RevealItem delay={100}>
